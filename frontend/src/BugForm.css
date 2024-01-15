@@ -1,0 +1,16 @@
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    margin-bottom: 10px;
+  }
+  .form-textarea {
+    height: 150px; 
+    width: 300px; 
+  }  
+  .background-style {
+    background-color: #4b0d0d;
+  }
