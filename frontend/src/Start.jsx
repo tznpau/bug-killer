@@ -6,6 +6,8 @@ import Login from './Login';
 import ProjectForm from './ProjectForm';
 import BugForm from './BugForm';
 
+import ProjectList from './ProjectList';
+import BugList from './BugList';
 
 
 const Start = () => {
@@ -146,7 +148,7 @@ const Start = () => {
     const handleProjectSubmit = (projectData) => {
         if (role === 'MP') {
 
-            setSuccessMessage('Proiect înregistrat cu succes!');
+            // setSuccessMessage('Proiect înregistrat cu succes!');
             setTimeout(() => {
                 setSuccessMessage('');
             }, 3000);
@@ -216,6 +218,7 @@ const Start = () => {
 
             {isLoggedIn && role === 'TST' && (
                 <BugForm
+                    onSubmit={handleBugSubmit}
                     role={role}
                     projects={projects}
                     setProjects={setProjects}
@@ -227,8 +230,14 @@ const Start = () => {
                 />
             )}
 
-        </div>
+            <div>
+                <ProjectList />
+                <BugList />
+            </div>
 
+
+
+        </div>
     );
 
 };
