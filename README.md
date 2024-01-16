@@ -10,7 +10,7 @@ npm run dev
 ```
 
 ## Server side
-Open a new rerminal in `bug-killer` and execute the following commands:
+Open a new terminal in `bug-killer` and execute the following commands:
 ```
 cd backend
 npm init -y
